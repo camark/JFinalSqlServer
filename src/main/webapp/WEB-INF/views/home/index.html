@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Hello JFinal</title>
+</head>
+<body>
+    <H1>Hello JFinal</H1>
+
+    <table>
+        <tr>
+            <td>部门</td>
+            <td>姓名</td>
+            <td>天</td>
+            <td>小时</td>
+            <td>类别</td>
+            <td>请假事由</td>
+        </tr>
+        <#list jias as jia>
+            <tr>
+                <td>${jia.cDepName}</td>
+                <td>${jia.cPerName}</td>
+                <td>${jia.iDays}</td>
+                <td>${jia.iHours}</td>
+                <td>${jia.cHdCode}</td>
+                <td>${jia.cMemo}</td>
+            </tr>
+        </#list>
+    </table>
+</body>
+</html>
